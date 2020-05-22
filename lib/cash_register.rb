@@ -29,7 +29,7 @@ end
 
  
  def void_last_transaction
-  quantity = self.transaction.to_i 
+  quantity = self.transaction.to_f
   quantity.times do 
     @items.delete_at(-1)
    @total -= @transaction
