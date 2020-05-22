@@ -8,7 +8,7 @@ class CashRegister
   @transaction = 0 
 end 
 
-def add_item(title, price, quantity=1) #'title' reverted from 'items'
+def add_item(title, price, quantity=1) #'title' reverted from 'items
 @total += price * quantity
 @transaction = [title, price, quantity]
 quantity.to_i.times do 
