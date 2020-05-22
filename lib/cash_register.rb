@@ -32,7 +32,6 @@ end
  end 
  
  def void_last_transaction
-   #!add_item(title,price)
   # quantity-=1 
   self.transaction = self.items.last #changed from [-1]
   (self.total).to_i - (self.transaction).to_i
