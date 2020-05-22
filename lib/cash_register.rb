@@ -4,13 +4,13 @@ class CashRegister
   def initialize(discount=nil)
   self.total = 0 
   self.discount = discount if discount !=nil
-  @@items = []
+  self.items = []
 end 
 
 def add_item(title, price, quantity=1) #'title' reverted from 'items
 @total += price*quantity
 quantity.to_i.times do 
- @@items << title
+ self.items << title
 end 
 end
 
