@@ -32,8 +32,7 @@ end
   quantity = self.transaction[1] #self.transaction = price*quantity
    @total -= self.transaction(1)
  end 
- end 
- end 
+
 
 #def void_last_transaction
   #  quantity = self.transaction[2]
