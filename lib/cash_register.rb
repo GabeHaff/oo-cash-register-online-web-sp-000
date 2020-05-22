@@ -38,7 +38,7 @@ end
      self.total = 0
  end 
  end 
-
+end 
 #def void_last_transaction
   #  quantity = self.transaction[2]
    # quantity.times do
