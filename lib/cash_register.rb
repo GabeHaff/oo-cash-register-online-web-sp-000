@@ -5,7 +5,6 @@ class CashRegister
   self.total = 0 
   self.discount = discount if discount !=nil
   self.items = [ ]
-  self.transaction
 end 
 
 def add_item(title, price, quantity=1) #'title' reverted from 'items
