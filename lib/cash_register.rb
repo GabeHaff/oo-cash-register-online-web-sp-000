@@ -32,9 +32,9 @@ end
  
  def void_last_transaction
   quantity.times do 
-    self.items.delete_at[-1]
+    @items.delete_at[-1]
    if self.items.empty?
-     self.total = 0
+     @total -= @transaction 
  end 
  end 
 end 
