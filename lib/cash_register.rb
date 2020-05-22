@@ -31,7 +31,6 @@ end
  end 
  
  def void_last_transaction
-  quantity = self.transaction[2]
   quantity.times do 
     self.items.delete_at[-1]
    if self.items.empty?
