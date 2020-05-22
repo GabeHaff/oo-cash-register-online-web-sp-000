@@ -27,7 +27,7 @@ return pin_pad_reads
 end 
  
  def items 
- @items = items
+ return self.items
  end 
  
  def void_last_transaction
