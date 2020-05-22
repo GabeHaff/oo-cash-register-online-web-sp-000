@@ -27,7 +27,7 @@ return pin_pad_reads
 end 
  
  def items 
- return self.items
+ self.items
  end 
  
  def void_last_transaction
@@ -38,6 +38,7 @@ end
  end 
  end 
 end 
+
 #def void_last_transaction
   #  quantity = self.transaction[2]
    # quantity.times do
