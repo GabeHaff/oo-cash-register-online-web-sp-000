@@ -9,7 +9,7 @@ end
 
 def add_item(title, price, quantity=1) #'title' reverted from 'items
 @total += price*quantity
-quantity.to_i.times do 
+quantity.times do 
  self.items << title
 end 
 end
@@ -25,10 +25,7 @@ def apply_discount
 end
 return pin_pad_reads
 end 
- 
- def items 
- return self.items
- end 
+
  
  def void_last_transaction
   quantity.times do 
