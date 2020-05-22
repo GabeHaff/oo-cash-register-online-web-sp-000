@@ -29,12 +29,9 @@ end
 
  
  def void_last_transaction
-  quantity = self.transaction.to_f
-  quantity.times do 
-    @items.delete_at(-1)
-   @total -= @transaction
-   if self.items.empty?
-     @total -= @transaction 
+  quantity = self.transaction(1)
+   @total -= self.transaction(1)
+  
  end 
  end 
 end 
