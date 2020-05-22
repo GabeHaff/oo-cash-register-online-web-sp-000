@@ -33,40 +33,4 @@ end
  end 
 
 
-#def void_last_transaction
-  #  quantity = self.transaction[2]
-   # quantity.times do
-     # self.purchases.pop
-     # self.total -= self.transaction[1]
-   # end
- # end
-
-##def add_item(name, price, quantity=1)
-   # self.transaction = [name, price, quantity]
-   # quantity.times do
-     # self.purchases.push self.transaction[0]
-     # self.total += self.transaction[1]
-   # end
-  #end
-
-
- 
- 
- 
- 
- ##The void_last_transaction method will remove the last transaction from the total. You'll need to make an additional attribute accessor(last_transaction) and keep track of that last transaction amount somehow. In what method of the class are you working with an individual item?(add_item)
- 
- ##def add_item(title, price, quantity=1)
-#@total += price*quantity
-#quantity.to_i.times do 
-# @items << title
-
-#@last_transaction < remove from >> @items.to_i // @total
-#// @last_transaction = @items(-1) //
-#last_transaction = price*quantity
-#@items.delete_at(-1) 
-#end 
-#end
- 
- 
-end
+end 
