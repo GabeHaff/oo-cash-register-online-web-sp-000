@@ -10,7 +10,7 @@ end
 def add_item(title, price, quantity=1) #'title' reverted from 'items
 @total += price*quantity
 quantity.to_i.times do 
- @items << title
+ @@items << title
 end 
 end
 
