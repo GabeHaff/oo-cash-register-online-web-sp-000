@@ -28,6 +28,7 @@ end
 
  
  def void_last_transaction
+  quantity = @transaction[(2)]
   quantity.times do 
     @items.delete_at[-1]
    if self.items.empty?
