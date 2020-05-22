@@ -29,9 +29,10 @@ end
 
  
  def void_last_transaction
-  quantity = self.transaction #self.transaction = price*quantity
+  #quantity = self.transaction
+  #self.transaction = price*quantity
    #@total -= self.transaction.to_i[1]
-   self.items.pop
+   #self.items.pop
    @total -= self.transaction
  end 
 
