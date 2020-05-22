@@ -8,7 +8,7 @@ class CashRegister
 end 
 
 def add_item(title, price, quantity=1) #'title' reverted from 'items'; #:title attr_accessor removed
-self.transaction = [title, price, quantity]
+@transaction = [title, price, quantity]
 quantity.to_i.times do 
  self.items << self.transaction #changed from items
 end 
