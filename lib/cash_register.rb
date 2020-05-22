@@ -29,9 +29,10 @@ end
 
  
  def void_last_transaction
-  quantity = self.transaction(2)
+  quantity = self.transaction[2]
   quantity.times do 
     @items.delete_at(-1)
+   @total -=@transaction
    if self.items.empty?
      @total -= @transaction 
  end 
