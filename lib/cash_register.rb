@@ -9,7 +9,6 @@ end
 
 def add_item(title, price, quantity=1) #'title' reverted from 'items'; #:title attr_accessor removed
 self.transaction = [title, price, quantity]
-@total += price*quantity
 quantity.to_i.times do 
  self.items << self.transaction #changed from items
 end 
@@ -32,10 +31,9 @@ end
  end 
  
  def void_last_transaction
-  # quantity-=1 
-  self.transaction = self.items.last #changed from [-1]
-  (self.total).to_i - (self.transaction).to_i
-  # @items.delete_at[-1]
+  quantity = self.transaction[-1]
+  quantity.times do 
+    self.items.delete_at[-1]
    if self.items.empty?
      self.total = 0
  end 
